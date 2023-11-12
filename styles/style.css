@@ -27,7 +27,7 @@
   padding-inline: 20px;
 }
 
-.corners::before {
+.decorated-zone::before {
   content: "";
   position: absolute;
   display: block;
@@ -39,7 +39,7 @@
   right: 20px;
 }
 
-.corners::after {
+.decorated-zone::after {
   content: "";
   position: absolute;
   display: block;
