@@ -120,11 +120,11 @@
 
 .header__theme-menu-button:hover {
   cursor: pointer;
-  border: 1px solid var(--hover-color, rgba(255, 0, 112, 0.4));
+  outline: 1px solid var(--hover-color, rgba(255, 0, 112, 0.4));
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--button-color, #ff0070);
+ outline: 0.1rem solid var(--button-color, #ff0070);
   pointer-events: none;
 }
 
@@ -140,7 +140,7 @@
   max-inline-size: 491px;
   color: var(--primary-color, #000028);
   font-family: "IBM Plex Mono", monospace;
-  font-size: 1.134rem;
+  font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.4795rem;
   white-space: pre-line;
@@ -179,6 +179,7 @@
   padding-bottom: 0;
 }
 
+
 .article-column { 
   display: flex; 
   flex-direction: column; 
@@ -192,9 +193,6 @@
   gap: 10px;
 }
 
-
-
-
 .article-title {
   color: var(--content-text-color, #000028);
   font-family: var(--main-font, monospace);
@@ -203,6 +201,8 @@
   font-weight: 700;
   line-height: 23.4px;
 }
+
+
 
 .article-title-decor {
   font-size: 18px;
@@ -267,28 +267,28 @@
   grid-row-end: 2;
 }
 
-picture:nth-of-type(2) {
+.gallery:nth-of-type(2) {
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 3;
 }
 
-picture:nth-of-type(3) {
+.gallery:nth-of-type(3) {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 4;
 }
 
-picture:nth-of-type(4) {
+.gallery:nth-of-type(4) {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
 }
 
-picture:last-of-type {
+.gallery:last-of-type {
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 3;
@@ -300,10 +300,10 @@ picture:last-of-type {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-block-size: 667px;
   padding-block: 20px;
   padding-inline: 20px;
-  min-height: 768px;
+  min-height: 100vh;
+  
 }
 
 .footer__title {
@@ -356,12 +356,12 @@ picture:last-of-type {
     padding-inline: 10px;
   }
 
-  .corners::before {
+  .decorated-zone::before {
     top: 10px;
     right: 10px;
   }
 
-  .corners::after {
+  .decorated-zone::after {
     bottom: 10px;
     left: 10px;
   }
